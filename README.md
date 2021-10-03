@@ -8,6 +8,7 @@ A React portfolio with the purpose of showing my React skills and showcasing my 
 
 ### Links and Resources
 
+- [Deployed site](https://marquesareactportfolio.netlify.app/)
 - [submission PR](http://xyz.com)
 - Any Links you used as reference
 
