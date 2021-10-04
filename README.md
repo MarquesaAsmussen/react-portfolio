@@ -9,7 +9,7 @@ A React portfolio with the purpose of showing my React skills and showcasing my 
 ### Links and Resources
 
 - [Deployed site](https://marquesareactportfolio.netlify.app/)
-- [submission PR](http://xyz.com)
+- [submission PR](https://github.com/MarquesaAsmussen/react-portfolio/pull/5)
 - Any Links you used as reference
 
 ### Reflections and Comments
