@@ -1,18 +1,17 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import $ from "jquery";
-import "./App.scss";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import About from "./components/About";
-import Home from "./components/Home";
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import $ from 'jquery';
+import './App.scss';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import About from './components/About';
+import Home from './components/Home';
 
 class App extends Component {
-
   constructor(props) {
     super();
     this.state = {
-      foo: "bar",
+      foo: 'bar',
       resumeData: {},
       sharedData: {},
     };
@@ -26,20 +25,20 @@ class App extends Component {
         ? `res_primaryLanguage.json`
         : `res_secondaryLanguage.json`;
     this.loadResumeFromPath(resumePath);
-  }
+  };
 
-  swapCurrentlyActiveLanguage = (oppositeLangIconId) => {
+  swapCurrentlyActiveLanguage = oppositeLangIconId => {
     var pickedLangIconId =
       oppositeLangIconId === window.$primaryLanguageIconId
         ? window.$secondaryLanguageIconId
         : window.$primaryLanguageIconId;
     document
       .getElementById(oppositeLangIconId)
-      .removeAttribute("filter", "brightness(40%)");
+      .removeAttribute('filter', 'brightness(40%)');
     document
       .getElementById(pickedLangIconId)
-      .setAttribute("filter", "brightness(40%)");
-  }
+      .setAttribute('filter', 'brightness(40%)');
+  };
 
   componentDidMount = () => {
     this.loadSharedData();
@@ -47,12 +46,12 @@ class App extends Component {
       window.$primaryLanguage,
       window.$secondaryLanguageIconId
     );
-  }
+  };
 
-  loadResumeFromPath = (path) => {
+  loadResumeFromPath = path => {
     $.ajax({
       url: path,
-      dataType: "json",
+      dataType: 'json',
       cache: false,
       success: function (data) {
         this.setState({ resumeData: data });
@@ -61,12 +60,12 @@ class App extends Component {
         alert(err);
       },
     });
-  }
+  };
 
   loadSharedData = () => {
     $.ajax({
       url: `portfolio_shared_data.json`,
-      dataType: "json",
+      dataType: 'json',
       cache: false,
       success: function (data) {
         this.setState({ sharedData: data });
@@ -76,30 +75,30 @@ class App extends Component {
         alert(err);
       },
     });
-  }
+  };
 
   render() {
     return (
       <Router>
         <Header sharedData={this.state.sharedData.basic_info} />
         <Switch>
-          <Route exact path="/">
+          <Route exact path='/'>
             <Home
               resumeData={this.state.resumeData}
               sharedData={this.state.sharedData}
             />
           </Route>
-          <Route path="/about">
+          <Route path='/about'>
             <About
               resumeBasicInfo={this.state.resumeData.basic_info}
               sharedBasicInfo={this.state.sharedData.basic_info}
             />
           </Route>
         </Switch>
-        <Footer 
+        <Footer
           sharedBasicInfo={this.state.sharedData.basic_info}
-          applyPickedLanguage={this.applyPickedLanguage} 
-        />  
+          applyPickedLanguage={this.applyPickedLanguage}
+        />
       </Router>
     );
   }
