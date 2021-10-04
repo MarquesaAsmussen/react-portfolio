@@ -11,70 +11,69 @@
   },
   "projects": [
     {
-      "title": "Animal Shelter",
-      "startDate": "2020",
-      "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
+      "title": "tvRepo",
+      "startDate": "2021",
+      "description": "My first project with React. The app allows users to keep track of all the television shows they want to watch and save them to a personalized favorites page.",
       "images": [
-        "images/portfolio/animal-shelter/p1.jpg",
-        "images/portfolio/animal-shelter/p2.jpg"
+        "images/portfolio/tvRepo/p1_tv.png",
+        "images/portfolio/tvRepo/p2_tv.png"
+      ],
+      "url": "https://tvrepo.netlify.app/#/",
+      "technologies": [
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        },
+        {
+          "class": "devicon-bootstrap-plain",
+          "name": "Bootstrap"
+        }
+      ]
+    },
+
+    {
+      "title": "Thymely",
+      "startDate": "2021",
+      "description": "My first project with JavaScript. The app allows Disney travels to choose from an array of thrill levels and find nearby activities in the park that suit them. This has been one of my favorite projects as the subject matter is special to me.",
+      "images": [
+        "images/portfolio/thymely/p1_thymely.png",
+        "images/portfolio/thymely/p2_thymely.png"
+      ],
+      "url": "https://thymely-apps.github.io/thymely/",
+      "technologies": [
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        },
+        {
+          "class": "devicon-css3-plain",
+          "name": "CSS 3"
+        },
+        {
+          "class": "devicon-html5-plain",
+          "name": "HTML 5"
+        }
+      ]
+    },
+
+    {
+      "title": "TripPerfect",
+      "startDate": "2021",
+      "description": "Another project in React. The app allows a user to search for events in a city and save them to a favorites page.",
+      "images": [
+        "images/portfolio/tripperfect/p1_trip.jpeg",
+        "images/portfolio/tripperfect/p2_trip.jpeg"
       ],
       "url": "",
       "technologies": [
         {
-          "class": "devicon-angularjs-plain",
-          "name": "Angular"
-        },
-        {
-          "class": "devicon-typescript-plain",
-          "name": "TypeScript"
-        },
-        {
-          "class": "devicon-csharp-plain",
-          "name": "C#"
-        }
-      ]
-    },
-    {
-      "title": "Photography",
-      "startDate": "2018",
-      "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
-      "images": [
-        "images/portfolio/photography/p1.jpg",
-        "images/portfolio/photography/p2.jpg"
-      ],
-      "url": "https://github.com",
-      "technologies": [
-        {
-          "class": "devicon-react-original",
-          "name": "React"
-        },
-        {
           "class": "devicon-javascript-plain",
           "name": "JavaScript"
-        }
-      ]
-    },
-    {
-      "title": "3D Object Viewer",
-      "startDate": "2015",
-      "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
-      "images": [
-        "images/portfolio/adventure/p1.jpg",
-        "images/portfolio/adventure/p2.jpg"
-      ],
-      "url": "https://github.com",
-      "technologies": [
-        {
-          "class": "devicon-angularjs-plain",
-          "name": "Angular"
         },
+
         {
-          "class": "devicon-typescript-plain",
-          "name": "TypeScript"
-        },
-        {
-          "class": "devicon-csharp-plain",
-          "name": "C#"
+          "class": "devicon-bootstrap-plain",
+          "name": "Bootstrap"
         }
       ]
     }
