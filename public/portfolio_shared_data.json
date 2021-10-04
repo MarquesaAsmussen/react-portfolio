@@ -1,17 +1,18 @@
 {
   "basic_info": {
     "name": "Marquesa Asmussen",
+    "headline": "I want to contribute to building people, community, and conservation",
     "titles": ["Software Developer"],
     "social": [
       {
         "name": "github",
-        "url": "https://github.com",
+        "url": "https://github.com/MarquesaAsmussen",
         "class": "fab fa-github"
       },
       {
-        "name": "instagram",
-        "url": "https://www.instagram.com",
-        "class": "fab fa-instagram"
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/marquesaa",
+        "class": "fab fa-linkedin"
       }
     ],
     "image": "myProfile.jpg"
